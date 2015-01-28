@@ -1,20 +1,13 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Capriol Films
+Author: Katja Mordaunt
 
 Stylesheet: Variables
-
-Here is where we declare all our variables like colors, fonts,
-base values, and defaults. We want to make sure this file ONLY
-contains variables that way our files don't get all messy.
-No one likes a mess.
 
 ******************************************************************/
 
 /*********************
 COLORS
-Need help w/ choosing your colors? Try this site out:
-http://0to255.com/
 *********************/
 
 $alert-yellow:      #ebe16f;
@@ -24,28 +17,22 @@ $alert-blue:        #d5edf8;
 
 $black:             #323944;
 $white:             #fff;
+$purple:            #a85ea9;
+$logo-purple:       #631966;
 
-$light-gray:        #f8f9fa;
-$gray:              #eaedf2;
-$text-color:        #5c6b80;
+$gray:              #a1a1a1;
+$light-gray:        lighten($gray, 10);
+$text-color:        #404040;
 $meta-gray:         #9fa6b4;
 
 $tan:               #eceee5;
 
 $green:             #7dd667;
 
-$bones-pink:        #f01d4f;
 $blue:              #2980b9;
 
-$link-color:        $bones-pink;
+$link-color:        $purple;
 $link-hover:        darken($link-color, 9%);
 
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
-
-
-/*
-Here's a great tutorial on how to
-use color variables properly:
-http://sachagreif.com/sass-color-variables/
-*/

@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Capriol Films
+Author: Katja Mordaunt
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -18,8 +18,8 @@ GENERAL STYLES
 body {
 	font-family: $lato;
 	font-size: 100%;
-	line-height: 1.5;
-	color: $text-color;
+	line-height: 0;
+  color: $text-color;
 	background-color: $gray;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
@@ -110,8 +110,9 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;
 	font-weight: 500;
-	/*
-	if you're going to use webfonts, be sure to check your weights
+	line-height: 1.4em;
+  /*
+	if you are going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
 	*/
 
@@ -122,13 +123,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 2.5em;
-	line-height: 1.333em;
+	font-size: 2.7em;
 }
 
 h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
+	font-size: 1.5em;
 	margin-bottom: 0.375em;
 }
 
@@ -143,7 +142,6 @@ h4, .h4 {
 
 h5, .h5 {
 	font-size: 0.846em;
-	line-height: 2.09em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
@@ -153,15 +151,23 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $black;
+	background-color: $purple;
 }
 
 	#logo {
-		margin: 0.75em 0;
+		margin: 0 0 0 -15%;
+    width: 100%;
+    text-align: center;
+        
 
 		a {
-			color: $white;
+			color: $logo-purple;
 		}
+
+    span#company-name {
+      position: absolute;
+      margin-top: 47px;
+    }
 	}
 
 /*********************
@@ -179,21 +185,21 @@ and more scalable.
 .nav {
 	border-bottom: 0;
 	margin: 0;
+  font-size: 1.2em;
 
 	li {
+    width: 100%;
+    text-align: center;
 
 		a {
 			display: block;
-			color: $white;
+			color: $logo-purple;
 			text-decoration: none;
-			padding: 0.75em;
+			padding: 0.55em;
+      line-height: 1.2em;
+      margin: 0.1em;
+      background: $gray;
 
-			/*
-			remember this is for mobile ONLY, so there's no need
-			to even declare hover styles here, you can do it in
-			the style.scss file where it's relevant. We want to
-			keep this file as small as possible!
-			*/
 			&:hover, &:focus {
 
 			}
@@ -203,13 +209,6 @@ and more scalable.
 
 		&:last-child {}
 
-		/*
-		so you really have to rethink your dropdowns for mobile.
-		you don't want to have it expand too much because the
-		screen is so small. How you manage your menu should
-		depend on the project. Here's some great info on it:
-		http://www.alistapart.com/articles/organizing-mobile/
-		*/
 		ul.sub-menu,
 		ul.children {
 
@@ -256,15 +255,22 @@ POSTS & CONTENT STYLES
 }
 
 		.hentry {
-			background-color: $white;
+			background-color: $light-gray;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
+			border: 6px solid $border-color;
 
 			header {
 				border-bottom: 1px solid $light-gray;
 				padding: 1.5em;
 			}
+      
+      h2 {
+        background: $border-color;
+        width: 100%;
+        padding: 0;
+        margin: 0;   
+      }
 
 			footer {
 				padding: 1.5em;
@@ -274,7 +280,6 @@ POSTS & CONTENT STYLES
 					margin: 0;
 				}
 			}
-
 		} /* end .hentry */
 
 		.single-title,
@@ -404,7 +409,7 @@ POSTS & CONTENT STYLES
 
 			img {
 				margin: 0 0 1.5em 0;
-				max-width: 100%;
+				width: 100%;
 				height: auto;
 			}
 
@@ -521,10 +526,9 @@ PAGE NAVI STYLES
       margin: 0;
       text-decoration: none;
       padding: 0;
-      line-height: 1em;
       font-size: 1em;
       font-weight: normal;
-      padding: 0.75em;
+      padding: 0.55em;
       min-width: 1em;
       display: block;
       color: $blue;
@@ -727,7 +731,6 @@ COMMENT STYLES
 		p {
 			margin: 0.7335em 0 1.5em;
 			font-size: 1em;
-			line-height: 1.5em;
 		}
 
 	} /* end .commentlist .comment_content */

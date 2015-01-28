@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: Capriol Films
+Author: Katja Mordaunt
 
 Stylesheet: Tablet & Small Desktop Stylesheet
 
@@ -33,7 +33,10 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+	#logo {
+    width: 40%;
+    float: left;
+  }
 
 /*********************
 NAVIGATION STYLES
@@ -41,114 +44,83 @@ NAVIGATION STYLES
 
 .nav {
 	border: 0;
-	ul {
+  margin-top: 120px;
+  text-align: right;
+
+  ul {
 		background:$black;
 		margin-top:0;
 	}
 	li {
-		float: left;
+    display: inline-block;
 		position: relative;
+    width: 130px;
 
 		a {
 			border-bottom: 0;
 
-			/*
-			you can use hover styles here even though this size
-			has the possibility of being a mobile device.
-			*/
 			&:hover, &:focus {
-				color: $white;
-				text-decoration: underline;
-			}
+				color: lighten($logo-purple, 10);
+			  background: lighten($gray, 10);
+      }
 		}
 
 		&:first-child {}
 		&:last-child {}
 
-		/*
-		plan your menus and drop-downs wisely.
-		*/
-		ul.sub-menu,
-		ul.children {
-			margin-top: 0;
-			border: 1px solid #ccc;
-			border-top: 0;
-			position: absolute;
-			visibility: hidden;
-			z-index: 8999;
-
-			li {
-
-				a {
-					padding-left: 10px;
-					border-right: 0;
-					display: block;
-					width: 180px;
-					border-bottom: 1px solid #ccc;
-
-					&:hover,
-					&:focus {}
-
-					&:link {}
-				}
-
-				&:first-child {}
-
-				&:last-child {
-
-					a {
-						border-bottom: 0;
-					}
-				}
-
-				/*
-				if you need to go deeper, go nuts
-				just remember deeper menus suck
-				for usability. k, bai.
-				*/
-				ul {
-					top:0;
-					left:100%;
-				}
-			}
-
-			/* highlight sub-menu current page */
-			li.current-menu-item,
-			li.current_page_item,
-			li.current_page_ancestor {
-				a {}
-			}
-		}
-
-		/* showing sub-menus */
-		&:hover > ul {
-			top: auto;
-			visibility:visible;
-		}
-
-	} /* end .menu ul li */
+		} /* end .menu ul li */
 
 	/* highlight current page */
 	li.current-menu-item,
 	li.current_page_item,
 	li.current_page_ancestor {
-		a {}
+		a {
+      color: lighten($logo-purple, 12);
+      background: lighten($gray, 12);
+    }
 	}  /* end current highlighters */
 
 } /* end .nav */
+
+/*********************
+ PAGE CONTENT
+ ********************/
+
+/** Home page gallery **/
+.home  {
+  .hentry {
+    width: 310px;
+    float: left;
+    margin: 10px;
+
+    .entry-content {
+      padding: 0;
+      margin: 0;
+
+      img {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	margin-top: 2.2em;
 }
 
 	.widgettitle {
-		border-bottom: 2px solid #444;
-		margin-bottom: 0.75em;
-	}
+		margin: 0;
+	  text-align: center;
+    font-size: 1.4em;
+    width: 100%;
+    color: $purple;
+
+  }
 
 	.widget {
 		padding: 0 10px;

@@ -18,11 +18,15 @@ GENERAL STYLES
 body {
 	font-family: $lato;
 	font-size: 100%;
-	line-height: 0;
+	line-height: 1.2em;
   color: $text-color;
 	background-color: $gray;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
+}
+
+.hide-visually {
+  display: none;
 }
 
 /********************
@@ -110,7 +114,7 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;
 	font-weight: 500;
-	line-height: 1.4em;
+	line-height: 1em;
   /*
 	if you are going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -889,4 +893,29 @@ FOOTER STYLES
 	} /* end .footer-links */
 
 
-	.copyright {}
+	.copyright {
+    display: inline-block;
+  }
+
+/* PROFILE BUTTONS ------------------------------------------------- */
+ 
+.social-profile-buttons,
+.social-profile-buttons div {
+  display: inline-block;
+  float: right;
+  margin: 0.15em 0; 
+}
+.social-profile-buttons a {
+  height: 32px;
+  width: 32px;
+  display: block;
+  margin: 5px;
+}
+.social-profile-buttons a.facebook {
+  background: url('../images/white_facebook.png') #4d7dc1 2px center no-repeat;
+}
+.social-profile-buttons a.twitter {
+  background: url('../images/white_twitter.png') #4099FF 2px center no-repeat;
+}
+
+

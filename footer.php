@@ -20,7 +20,19 @@
 
 					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 
-				</div>
+          <div class="social-profile-buttons">
+            <div class="facebook-profile">
+              <a href="//facebook.com/CapriolFilms" class="profile sb text facebook" title="Facebook profile" alt="Facebook profile" target="_blank">
+                <span class="hide-visually">Facebook</span>
+              </a>
+            </div>
+            <div class="twitter-profile">
+              <a href="//twitter.com/capriolfilms" class="profile sb text twitter" title="Twitter profile" alt="Twitter profile" target="_blank">
+                <span class="hide-visually">Twitter</span>
+              </a>
+            </div>
+          </div> <!-- end .social-profile-buttons -->
+        </div> <!-- end #inner-footer -->  
 
 			</footer>
 

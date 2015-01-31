@@ -104,6 +104,27 @@ POSTS & CONTENT STYLES
 
 } /* end .entry-content */
 
+/** Home page gallery **/
+.home  {
+  .hentry {
+    width: 45%;
+    float: left;
+    margin: 10px;
+
+    .entry-content {
+      padding: 0;
+      margin: 0;
+
+      img {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+
 /*********************
 FOOTER STYLES
 *********************/

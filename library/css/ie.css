@@ -237,6 +237,24 @@ POSTS & CONTENT STYLES
 }
 
 /* end .entry-content */
+/** Home page gallery **/
+/* line 109, ../scss/breakpoints/_481up.scss */
+.home .hentry {
+  width: 45%;
+  float: left;
+  margin: 10px;
+}
+/* line 114, ../scss/breakpoints/_481up.scss */
+.home .hentry .entry-content {
+  padding: 0;
+  margin: 0;
+}
+/* line 118, ../scss/breakpoints/_481up.scss */
+.home .hentry .entry-content img {
+  padding: 0;
+  margin: 0;
+}
+
 /*********************
 FOOTER STYLES
 *********************/
@@ -323,18 +341,18 @@ NAVIGATION STYLES
  PAGE CONTENT
  ********************/
 /** Home page gallery **/
-/* line 91, ../scss/breakpoints/_768up.scss */
+/* line 90, ../scss/breakpoints/_768up.scss */
 .home .hentry {
-  width: 310px;
+  width: 23%;
   float: left;
-  margin: 10px;
+  margin: 8px;
 }
-/* line 96, ../scss/breakpoints/_768up.scss */
+/* line 95, ../scss/breakpoints/_768up.scss */
 .home .hentry .entry-content {
   padding: 0;
   margin: 0;
 }
-/* line 100, ../scss/breakpoints/_768up.scss */
+/* line 99, ../scss/breakpoints/_768up.scss */
 .home .hentry .entry-content img {
   padding: 0;
   margin: 0;

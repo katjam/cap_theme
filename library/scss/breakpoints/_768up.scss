@@ -85,13 +85,12 @@ NAVIGATION STYLES
 /*********************
  PAGE CONTENT
  ********************/
-
 /** Home page gallery **/
 .home  {
   .hentry {
-    width: 310px;
+    width: 23%;
     float: left;
-    margin: 10px;
+    margin: 8px;
 
     .entry-content {
       padding: 0;
@@ -104,6 +103,7 @@ NAVIGATION STYLES
     }
   }
 }
+
 
 
 /*********************

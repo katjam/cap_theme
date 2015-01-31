@@ -156,6 +156,7 @@ HEADER STYLES
 
 .header {
 	background-color: $purple;
+  padding-top: 10px;
 }
 
 	#logo {
@@ -274,6 +275,8 @@ POSTS & CONTENT STYLES
         width: 100%;
         padding: 0;
         margin: 0;   
+        min-height: 50px;
+        text-align: center;
       }
 
 			footer {
@@ -320,8 +323,12 @@ POSTS & CONTENT STYLES
 		}
 
 		/* entry content */
-		.entry-content {
-			padding: 1.5em 1.5em 0;
+	  .home .entry-content {
+      background: $border-color;
+    }  
+    
+    .entry-content {
+			padding: 0 1.5em 1.5em 1.5em;
 
 			p {
 				margin: 0 0 1.5em;
@@ -417,6 +424,11 @@ POSTS & CONTENT STYLES
 				height: auto;
 			}
 
+      // contact form hidden gif
+      .wpcf7 img {
+        height: 0 !important;
+      }
+
 			/*
 			image alignment on a screen this size may be
 			a bit difficult. It's set to start aligning
@@ -496,6 +508,26 @@ POSTS & CONTENT STYLES
 	.tags {
 		margin: 0;
 	}
+
+/******************************************************************
+GALLERY IMAGE STYLES
+******************************************************************/
+.gallery_box_single {
+  p {
+    margin-top: 0 !important;
+  }
+  .gllr_image_block {
+    margin-bottom: 12px;
+  }
+  img {
+    border-radius: 3px;
+  }
+  .gllr_single_image_text {
+    text-align: center;
+    font-size: 0.8em;
+    color: $text-color;
+  }
+}
 
 /******************************************************************
 PAGE NAVI STYLES

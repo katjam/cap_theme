@@ -104,7 +104,23 @@ NAVIGATION STYLES
   }
 }
 
-
+/* News Page content  */
+.blog {
+  .post-thumb,
+  .post-teaser {
+    display: inline-block;
+  }
+  .post-thumb img {
+    margin: 0;
+  }
+  .post-teaser {
+    width: 75%;
+    padding: 14px;
+    p {
+      margin: 0;
+    }
+  }
+}
 
 /*********************
 SIDEBARS & ASIDES
@@ -124,7 +140,7 @@ SIDEBARS & ASIDES
 
 	.widget {
 		padding: 0 10px;
-		margin: 2.2em 0;
+		margin: 1em 0;
 
 		ul {
 			li {

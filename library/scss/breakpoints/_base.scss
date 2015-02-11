@@ -328,7 +328,11 @@ POSTS & CONTENT STYLES
 	  .home .entry-content {
       background: $border-color;
     }  
-    
+   
+    .category-news .entry-content {
+      padding: 0;
+    }
+
     .entry-content {
 			padding: 0 1.5em 1.5em 1.5em;
 

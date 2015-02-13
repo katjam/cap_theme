@@ -327,6 +327,9 @@ POSTS & CONTENT STYLES
 		/* entry content */
 	  .home .entry-content {
       background: $border-color;
+      img {
+        height: auto;
+      }
     }  
    
     .category-news .entry-content {

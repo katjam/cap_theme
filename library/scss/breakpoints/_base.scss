@@ -878,7 +878,16 @@ SIDEBARS & ASIDES
 
 	.widgettitle {}
 
-	.widget {
+	.widget, .top-widget {
+
+    background-color: $light-gray !important;
+	  border-radius: 3px;
+		margin-bottom: 1.5em;
+		border: 6px solid $border-color;
+   
+    #mc_embed_signup {
+      background-color: $light-gray !important;
+    }
 
 		ul {
 

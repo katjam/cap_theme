@@ -2158,12 +2158,23 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 885, ../scss/breakpoints/_base.scss */
-.widget ul li {
+/* line 881, ../scss/breakpoints/_base.scss */
+.widget, .top-widget {
+  background-color: #bababa !important;
+  border-radius: 3px;
+  margin-bottom: 1.5em;
+  border: 6px solid #cccccc;
+}
+/* line 888, ../scss/breakpoints/_base.scss */
+.widget #mc_embed_signup, .top-widget #mc_embed_signup {
+  background-color: #bababa !important;
+}
+/* line 894, ../scss/breakpoints/_base.scss */
+.widget ul li, .top-widget ul li {
   /* deep nesting */
 }
 
-/* line 902, ../scss/breakpoints/_base.scss */
+/* line 911, ../scss/breakpoints/_base.scss */
 .no-widgets {
   background-color: white;
   padding: 1.5em;
@@ -2176,7 +2187,7 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 915, ../scss/breakpoints/_base.scss */
+/* line 924, ../scss/breakpoints/_base.scss */
 .footer {
   clear: both;
   background-color: #323944;
@@ -2193,13 +2204,13 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
-/* line 941, ../scss/breakpoints/_base.scss */
+/* line 950, ../scss/breakpoints/_base.scss */
 .copyright {
   display: inline-block;
 }
 
 /* PROFILE BUTTONS ------------------------------------------------- */
-/* line 948, ../scss/breakpoints/_base.scss */
+/* line 957, ../scss/breakpoints/_base.scss */
 .social-profile-buttons,
 .social-profile-buttons div {
   display: inline-block;
@@ -2207,7 +2218,7 @@ view.
   margin: 0.15em 0;
 }
 
-/* line 953, ../scss/breakpoints/_base.scss */
+/* line 962, ../scss/breakpoints/_base.scss */
 .social-profile-buttons a {
   height: 32px;
   width: 32px;
@@ -2215,12 +2226,12 @@ view.
   margin: 5px;
 }
 
-/* line 959, ../scss/breakpoints/_base.scss */
+/* line 968, ../scss/breakpoints/_base.scss */
 .social-profile-buttons a.facebook {
   background: url("../images/white_facebook.png") #4d7dc1 2px center no-repeat;
 }
 
-/* line 962, ../scss/breakpoints/_base.scss */
+/* line 971, ../scss/breakpoints/_base.scss */
 .social-profile-buttons a.twitter {
   background: url("../images/white_twitter.png") #4099ff 2px center no-repeat;
 }

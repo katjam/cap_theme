@@ -395,16 +395,22 @@ SIDEBARS & ASIDES
 }
 
 /* line 145, ../scss/breakpoints/_768up.scss */
+.widget.widget_sp_image {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 150, ../scss/breakpoints/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 1em 0;
 }
-/* line 150, ../scss/breakpoints/_768up.scss */
+/* line 155, ../scss/breakpoints/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 158, ../scss/breakpoints/_768up.scss */
+/* line 163, ../scss/breakpoints/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -429,7 +435,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 266, ../scss/breakpoints/_768up.scss */
+/* line 271, ../scss/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.

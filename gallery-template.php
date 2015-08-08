@@ -1,7 +1,7 @@
 <?php
 /*
 Template Name: Gallery Template
-* Version: 1.2
+* Version: 1.2.2
 */
 ?>
 <?php get_header(); ?>
@@ -28,7 +28,7 @@ Template Name: Gallery Template
 							$gllr_options = get_option( 'gllr_options' );
 							$count = 0;
 							$per_page = $showitems = get_option( 'posts_per_page' );  
-							$count_all_albums = $wpdb->get_var( "SELECT COUNT(*) FROM wp_posts WHERE 1=1 AND wp_posts.post_type = 'gallery' AND (wp_posts.post_status = 'publish')" );
+							$count_all_albums = $wpdb->get_var( "SELECT COUNT(*) FROM $wpdb->posts WHERE $wpdb->posts.post_type = 'gallery' AND ($wpdb->posts.post_status = 'publish')" );
 
 							if ( substr( $permalink, strlen( $permalink ) -1 ) != "/" ) {
 								if ( strpos( $permalink, "?" ) !== false ) {
@@ -72,7 +72,7 @@ Template Name: Gallery Template
 									$count++; ?>
 									<li>
 										<a rel="bookmark" href="<?php echo get_permalink(); ?>" title="<?php the_title(); ?>">
-											<img style="width:<?php echo $gllr_options['gllr_custom_size_px'][0][0]; ?>px; <?php echo $gllr_border; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" src="<?php echo $image_attributes[0]; ?>" />
+											<img width="<?php echo $gllr_options['gllr_custom_size_px'][0][0]; ?>" height="<?php echo $gllr_options['gllr_custom_size_px'][0][1]; ?>" style="width:<?php echo $gllr_options['gllr_custom_size_px'][0][0]; ?>px; height:<?php echo $gllr_options['gllr_custom_size_px'][0][1]; ?>px; <?php echo $gllr_border; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" src="<?php echo $image_attributes[0]; ?>" />
 										</a>
 										<div class="gallery_detail_box">
 											<div><?php the_title(); ?></div>

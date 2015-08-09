@@ -918,6 +918,15 @@ SIDEBARS & ASIDES
 		margin-bottom: 1.5em;
 	}
 
+
+	.dosn .widget {
+	  width: 48%;
+	  padding: 10px;
+	  h4 {
+	    text-align: left;
+	    color: $text-color;	    
+	  }  
+	}
 /*********************
 FOOTER STYLES
 *********************/

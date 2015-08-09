@@ -2185,10 +2185,21 @@ SIDEBARS & ASIDES
   margin-bottom: 1.5em;
 }
 
+/* line 922, ../scss/breakpoints/_base.scss */
+.dosn .widget {
+  width: 48%;
+  padding: 10px;
+}
+/* line 925, ../scss/breakpoints/_base.scss */
+.dosn .widget h4 {
+  text-align: left;
+  color: #404040;
+}
+
 /*********************
 FOOTER STYLES
 *********************/
-/* line 925, ../scss/breakpoints/_base.scss */
+/* line 934, ../scss/breakpoints/_base.scss */
 .footer {
   clear: both;
   background-color: #323944;
@@ -2205,13 +2216,13 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
-/* line 951, ../scss/breakpoints/_base.scss */
+/* line 960, ../scss/breakpoints/_base.scss */
 .copyright {
   display: inline-block;
 }
 
 /* PROFILE BUTTONS ------------------------------------------------- */
-/* line 958, ../scss/breakpoints/_base.scss */
+/* line 967, ../scss/breakpoints/_base.scss */
 .social-profile-buttons,
 .social-profile-buttons div {
   display: inline-block;
@@ -2219,7 +2230,7 @@ view.
   margin: 0.15em 0;
 }
 
-/* line 963, ../scss/breakpoints/_base.scss */
+/* line 972, ../scss/breakpoints/_base.scss */
 .social-profile-buttons a {
   height: 32px;
   width: 32px;
@@ -2227,12 +2238,12 @@ view.
   margin: 5px;
 }
 
-/* line 969, ../scss/breakpoints/_base.scss */
+/* line 978, ../scss/breakpoints/_base.scss */
 .social-profile-buttons a.facebook {
   background: url("../images/white_facebook.png") #4d7dc1 2px center no-repeat;
 }
 
-/* line 972, ../scss/breakpoints/_base.scss */
+/* line 981, ../scss/breakpoints/_base.scss */
 .social-profile-buttons a.twitter {
   background: url("../images/white_twitter.png") #4099ff 2px center no-repeat;
 }

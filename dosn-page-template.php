@@ -1,3 +1,8 @@
+<?php
+/*
+ * Template Name: DOSN page
+ */
+?>
 <?php get_header(); ?>
 
 	<div id="content">
@@ -8,9 +13,7 @@
 					get_template_part( 'post-formats/format', get_post_format() );
 				?>
 				<!-- Draw on Sweet Night widgets here -->
-				<?php if (get_the_id() === 63): ?>
-					<?php get_template_part( 'dosn-footer' ); ?>
-				<?php endif; ?>
+				<?php get_template_part( 'dosn-footer' ); ?>
 				<?php endwhile; ?>
 
 				<?php else : ?>

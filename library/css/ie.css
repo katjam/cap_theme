@@ -255,6 +255,11 @@ POSTS & CONTENT STYLES
   margin: 0;
 }
 
+/* line 126, ../scss/breakpoints/_481up.scss */
+.dosn .widget {
+  width: 48%;
+}
+
 /*********************
 FOOTER STYLES
 *********************/

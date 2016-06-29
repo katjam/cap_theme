@@ -6,7 +6,7 @@
 
 						<main id="main" role="main" itemprop="mainContentOfPage" >
               <div class="section clearfix">
-                <h2>Cinema</h2>
+                <h2>Cinema</h2><div><h3><a href="/screenings">CURRENTLY SHOWING - Draw on Sweet Night</a></h3></div>
                 <?php $args = array( 'post_type' => 'capriol-film', 'production-types' => 'cinema' ); ?>
                 <?php $loop = new WP_Query( $args ); ?>
                 <?php while ($loop->have_posts()) : $loop->the_post(); ?>

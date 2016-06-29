@@ -8,7 +8,7 @@
 
                 <section class="entry-content cf" itemprop="articleBody">
                   <?php
-                    the_content();
+	                    the_content();
                   ?>    
                  </section> <?php // end article section ?>
 

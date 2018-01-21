@@ -5,9 +5,11 @@
                 <div id="inner-content" class="wrap cf">
 
                         <main id="main" role="main" itemprop="mainContentOfPage" >
-              <div class="section clearfix">
-                <h2>Cinema</h2><!-- <div><h3><a href="/current-screenings">COMING SOON</a></h3></div> --!>
-                <?php $args = array( 'post_type' => 'capriol-film', 'production-types' => 'cinema' ); ?>
+             <div class="section clearfix">
+            <div><h3><a href="/crowdfunding-through-lottes-lens">Crowdfunding - Through Lotte's Lens</a></h3></div>
+
+                <h2>Cinema</h2>
+               <?php $args = array( 'post_type' => 'capriol-film', 'production-types' => 'cinema' ); ?>
                 <?php $loop = new WP_Query($args); ?>
                 <?php while ($loop->have_posts()) : $loop->the_post(); ?>
 
